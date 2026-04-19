@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPT Telecom - Kho Tài Liệu Trực Tuyến</title>
+    <style>
+        /* Định nghĩa bảng màu FPT Telecom */
+        :root {
+            --fpt-orange: #F37021;
+            --fpt-blue: #005696;
+            --fpt-green: #009141;
+            --bg-light: #f5f7fa;
+            --text-dark: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            width: 90%;
+            max-width: 450px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-top: 6px solid var(--fpt-orange);
+            position: relative;
+        }
+
+        /* Giả lập Logo FPT */
+        .fpt-logo {
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 5px;
+            letter-spacing: -1px;
+        }
+        .fpt-logo .f { color: var(--fpt-blue); }
+        .fpt-logo .p { color: var(--fpt-orange); }
+        .fpt-logo .t { color: var(--fpt-green); }
+
+        .sub-brand {
+            color: #666;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        .divider {
+            height: 2px;
+            width: 50px;
+            background: var(--fpt-orange);
+            margin: 0 auto 25px;
+        }
+
+        h1 {
+            color: var(--fpt-blue);
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 15px;
+            margin-bottom: 35px;
+        }
+
+        .btn-drive {
+            display: block;
+            background-color: var(--fpt-orange);
+            color: white;
+            text-decoration: none;
+            padding: 16px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(243, 112, 33, 0.3);
+        }
+
+        .btn-drive:hover {
+            background-color: #d85d15;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(243, 112, 33, 0.4);
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        /* Hiệu ứng trang trí nhỏ */
+        .decor-circle {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: rgba(243, 112, 33, 0.05);
+            border-radius: 50%;
+            top: -20px;
+            right: -20px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="decor-circle"></div>
+        
+        <div class="fpt-logo">
+            <span class="f">F</span><span class="p">P</span><span class="t">T</span>
+        </div>
+        <span class="sub-brand">Telecom</span>
+
+        <div class="divider"></div>
+
+        <h1>HỆ THỐNG LƯU TRỮ DỮ LIỆU</h1>
+        <p>Truy cập kho tài liệu dùng chung của FPT Telecom. Vui lòng không chia sẻ liên kết này ra ngoài hệ thống.</p>
+        
+        <a href="https://drive.google.com/drive/folders/1_Maue1viAmJU6tq45h9mIYHbC0io4Wkt?usp=sharing" target="_blank" class="btn-drive">
+            MỞ GOOGLE DRIVE
+        </a>
+
+        <div class="footer">
+            &copy; 2024 FPT Telecom. Mọi quyền được bảo lưu.
+        </div>
+    </div>
+
+</body>
+</html>
